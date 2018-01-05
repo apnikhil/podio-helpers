@@ -5,7 +5,7 @@ Podio::authenticate_with_app(APP_ID, APP_SECRET);
 if ( Podio::is_authenticated() ) {
 	try {
 		// There are two way to update an item
-		// First methods
+		// First method
 		PodioItem::update(ITEM_ID, array('fields' => array(FIELD_EXTERNAL_ID => FIELD_VALUE), array('silent' => true, 'hook' => true)));
 
 		// Second method (example: Text field)
