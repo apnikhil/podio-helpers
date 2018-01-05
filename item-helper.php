@@ -16,7 +16,7 @@ if ( Podio::is_authenticated() ) {
 		// Step - 1
 		// Upload file to Podio and get file ID
 		// Returns file ID
-		PodioFile::upload( FILE_PATH, FILE_NAME )
+		PodioFile::upload( FILE_PATH, FILE_NAME );
 
 		// Step - 2
 		// Attach the file to Podio entity (item, space etc..)
